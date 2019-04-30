@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.d("value", "oncreate")
 
+// hello this is the first comment fm exp_firoz
 
         val lng = LocaleHelper().getLanguage(this)
        LocaleHelper().setLocale(this,lng)
