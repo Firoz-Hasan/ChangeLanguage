@@ -11,11 +11,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.d("value", "oncreate")
-        setContentView(R.layout.activity_main)
+
 
         val lng = LocaleHelper().getLanguage(this)
        LocaleHelper().setLocale(this,lng)
         Log.d("value", "===" + lng)
+
+        setContentView(R.layout.activity_main)
 
         try {
             if (lng?.equals("bn", true)!!) {

@@ -8,7 +8,7 @@ class App : Application() {
         super.onCreate()
         val language = LocaleHelper().getLanguage(this@App)
         LocaleHelper().setLocale(this,language)
-//        Log.d("value", "===1"+language)
+        Log.d("value", "===1"+language)
  //       Constants.LANGUAGE_SELECTED = language
     }
 }
